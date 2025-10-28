@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 
-// Declarations from csrc/hotspot_cuda_scratch.cu (pure CUDA)
+// Declarations from hotspot_cuda_scratch.cu (pure CUDA)
 extern "C" void launch_hotspot_cuda_scratch_wmma_fp16(
     void const* A,
     void const* B,

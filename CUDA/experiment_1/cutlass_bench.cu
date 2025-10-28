@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <vector>
 
-// CUTLASS launcher (provided in csrc/cutlass_wmma_gemm.cu)
+// CUTLASS launcher (provided in cutlass_wmma_gemm.cu)
 extern "C" void launch_cutlass_gemm_fp16_row_col(
     const void* A, const void* B_colmajor, void* C,
     int M, int N, int K,
