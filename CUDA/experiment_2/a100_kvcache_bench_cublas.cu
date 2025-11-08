@@ -4,7 +4,10 @@
 #include <cstdlib>
 #include <cstring>
 #include <string>
+#include <vector>
 #include <algorithm>
+#include <cctype>
+#include <cmath>
 
 // Cast kernel at file scope
 __global__ void cast_half_to_float_kernel(const __half* __restrict__ src, float* __restrict__ dst, size_t n) {
@@ -246,11 +249,11 @@ int main(int argc, char** argv) {
 }
 
 
-// nvcc -O3 -std=c++17 -arch=sm_80 -use_fast_math -lineinfo -lcublas -o a100_kvcache_bench a100_kvcache_bench.cu
-// ./a100_kvcache_bench 4096 8192 128 128 50 10 65536 fp16
+// nvcc -O3 -std=c++17 -arch=sm_80 -use_fast_math -lineinfo -lcublas -o a100_kvcache_bench_cublas a100_kvcache_bench_cublas.cu
+// ./a100_kvcache_bench_cublas 4096 8192 128 128 50 10 65536 fp16
 
 // Log
-// $ ./a100_kvcache_bench 4096 8192 128 128 50 10 65536 fp16
+// $ ./a100_kvcache_bench_cublas 4096 8192 128 128 50 10 65536 fp16
 // A100 KV-cache attention benchmark (cuBLAS)
 // M=4096 L=8192 D=128 Dv=128 total_k=65536 iters=50 warmup=10 dtype=fp16 scale=0.088388
 // Average time: 10.195 ms, Throughput: 1.69 TFLOPs
