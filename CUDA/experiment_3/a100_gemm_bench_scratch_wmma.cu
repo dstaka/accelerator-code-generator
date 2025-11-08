@@ -179,5 +179,5 @@ int main(int argc, char** argv) {
 // Log
 // ./a100_gemm_bench_scratch_wmma 8192 8192 8192 30 5 fp16
 // A100 GEMM benchmark (v1.4.1 - 4x6 WARP_TILES, 64x96 block)
-// M=8192 N=8192 K=8192 iters=30 warmup=5 dtype=fp16
-// Average time: 60.770 ms, Throughput: 18.09 TFLOPs
+// M=16384 N=16384 K=16384 iters=50 warmup=10 dtype=fp16
+// Average time: 482.933 ms, Throughput: 18.21 TFLOPs

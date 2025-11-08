@@ -184,5 +184,4 @@ int main(int argc, char** argv) {
 // $ ./a100_gemm_bench_scratch_wmma 16384 16384 16384 50 10 fp16
 // A100 GEMM benchmark (scratch WMMA)
 // M=16384 N=16384 K=16384 iters=50 warmup=10 dtype=fp16
-// Average time: 531.169 ms, Throughput: 16.56 TFLOPs
-
+// Average time: 509.337 ms, Throughput: 17.27 TFLOPs

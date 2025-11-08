@@ -237,7 +237,7 @@ int main(int argc, char** argv) {
 // ./a100_gemm_bench_cublas 16384 16384 16384 50 10 fp16
 
 // Log
-// $ ./a100_gemm_bench_cublas 16384 16384 16384 50 10 fp16
+// ./a100_gemm_bench_cublas 16384 16384 16384 50 10 fp16
 // A100 GEMM benchmark (cuBLAS)
 // M=16384 N=16384 K=16384 iters=50 warmup=10 dtype=fp16
-// Average time: 42.436 ms, Throughput: 207.28 TFLOPs
+// Average time: 40.268 ms, Throughput: 218.44 TFLOPs
