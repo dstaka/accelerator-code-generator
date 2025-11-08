@@ -173,11 +173,11 @@ int main(int argc, char** argv) {
     return 0;
 }
 
-// nvcc -O3 -std=c++17 -arch=sm_80 -use_fast_math -lineinfo -o a100_gemm_bench_scratch_wmma a100_gemm_bench_scratch_wmma
-// ./a100_gemm_bench_scratch_wmma 8192 8192 8192 30 5 fp16
+// nvcc -O3 -std=c++17 -arch=sm_80 -use_fast_math -lineinfo -o a100_gemm_bench_scratch_wmma a100_gemm_bench_scratch_wmma.cu
+// ./a100_gemm_bench_scratch_wmma 16384 16384 16384 50 10 fp16
 
 // Log
-// ./a100_gemm_bench_scratch_wmma 8192 8192 8192 30 5 fp16
+// ./a100_gemm_bench_scratch_wmma 16384 16384 16384 50 10 fp16
 // A100 GEMM benchmark (v1.4.1 - 4x6 WARP_TILES, 64x96 block)
 // M=16384 N=16384 K=16384 iters=50 warmup=10 dtype=fp16
-// Average time: 482.933 ms, Throughput: 18.21 TFLOPs
+// Average time: 482.917 ms, Throughput: 18.21 TFLOPs

@@ -277,4 +277,4 @@ int main(int argc, char** argv) {
 // ./a100_kvcache_bench_cublas 4096 8192 128 128 50 10 65536 fp16
 // A100 KV-cache attention benchmark (v1.1.1 - cuBLAS + Warp Softmax)
 // M=4096 L=8192 D=128 Dv=128 total_k=65536 iters=50 warmup=10 dtype=fp16 scale=0.088388
-// Average time: 0.899 ms, Throughput: 19.12 TFLOPs
+// Average time: 0.900 ms, Throughput: 19.08 TFLOPs

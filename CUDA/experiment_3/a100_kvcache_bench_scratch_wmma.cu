@@ -322,11 +322,11 @@ int main(int argc, char** argv) {
 
 
 
-// nvcc -O3 -std=c++17 -arch=sm_80 -use_fast_math -lineinfo -lcublas -o aa100_kvcache_bench_scratch_wmma a100_kvcache_bench_scratch_wmma.cu
+// nvcc -O3 -std=c++17 -arch=sm_80 -use_fast_math -lineinfo -lcublas -o a100_kvcache_bench_scratch_wmma a100_kvcache_bench_scratch_wmma.cu
 // ./a100_kvcache_bench_scratch_wmma 4096 8192 128 128 50 10 65536 fp16
 
 // Log
 // ./a100_kvcache_bench_scratch_wmma 4096 8192 128 128 50 10 65536 fp16
 // A100 KV-cache attention benchmark (v1.1.1 - Warp Softmax)
 // M=4096 L=8192 D=128 Dv=128 total_k=65536 iters=50 warmup=10 dtype=fp16 scale=0.088388
-// Average time: 3.896 ms, Throughput: 4.41 TFLOPs
+// Average time: 3.898 ms, Throughput: 4.41 TFLOPs
